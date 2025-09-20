@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f; /* Dark blue/purple background */
+    color: white;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50; /* Green header */
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2e7d32;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 1.2em;
+}
+
+/* Games Section */
+section#games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Game Card */
+.game {
+    background-color: #2c2c3e; /* Dark card background */
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Game Titles */
+.game h2 {
+    margin-bottom: 15px;
+}
+
+/* About Us Links */
+.game a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.game a:hover {
+    text-decoration: underline;
+}
+
+/* Tic-Tac-Toe Board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background-color: #44445e; /* Darker cells */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #55557a;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
